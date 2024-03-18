@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #313131;
+}
+a:hover {
+  color: #ffd600;
+}
+p {
+  font-size: 13px;
+}
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #313131;
+}
+
+/* ======== header ========  */
+/* ==== All navbar ===== */
+/* nav upper start */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-content .logo img {
+  height: 35px;
+  width: 130px;
+}
+header .nav-upper ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  gap: 10px;
+}
+header .nav-upper a {
+  color: black;
+  padding-right: 7px;
+}
+nav .toggle_menu i {
+  font-size: 36px;
+  display: none;
+  cursor: pointer;
+}
+header .toggle_nav {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+  z-index: 1;
+}
+header .toggle_nav.open {
+  height: 520px;
+  width: 300px;
+}
+header .toggle_nav .toggle-sec-ul {
+  display: flex;
+  font-size: 10px;
+}
+header .toggle_nav ul li {
+  padding: 12px 0;
+}
+header .toggle_nav a {
+  color: #eee;
+  font-size: 14px;
+}
+header .toggle_nav input {
+  outline: none;
+  border: 1.5px solid #ffd600;
+  background-color: transparent;
+  color: #eee;
+  font-size: 15px;
+  margin: 10px 25px 20px 25px;
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+/* nav upper end */
+
+header .hr {
+  border: 1px solid #ccc;
+  width: 92%;
+  margin-top: 13px;
+}
+
+/* nav lower start */
+header .nav-lower ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+header .nav-lower li {
+  margin: 13px 20px 0 20px;
+}
+header .nav-lower a {
+  color: black;
+}
+/* nav lower end */
+
+/* add pesodu element in nav */
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a:focus {
+  color: #313131;
+}
+.nav-links a:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 1.5px;
+  left: 0;
+  width: 100%;
+  background-color: #ffd600;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-links a:hover:after,
+.nav-links a:active:after,
+.nav-links a:focus:after {
+  transform: scaleX(1);
+}
+/* ===== All navbar ===== */
+
+/* ======== header end ======= */
+/* ======== main ========  */
+.faq-container {
+  margin-bottom: 40px;
+}
+.faq {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.faq .question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 15px 7px 15px;
+  border-bottom: 0.5px solid #ccc;
+}
+.faq .question h6 {
+  font-style: 15px;
+  font-weight: 600;
+}
+.faq .question i {
+  font-size: 25px;
+}
+.faq .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in;
+}
+.faq.active .answer {
+  max-height: 300px;
+}
+.faq .answer p {
+  padding: 10px 25px;
+  color: #757575;
+}
+.need-assis-area {
+  background-color: #f5f5f5;
+  padding: 20px;
+  height: 440px;
+}
+.need-assis-area textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 5px;
+  color: black;
+  font-style: 14px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  header .nav-upper,
+  header .nav-lower {
+    display: none;
+  }
+  nav .toggle_menu i,
+  header .toggle_nav {
+    display: block;
+  }
+
+  .info-card .main-area {
+    padding: 0px 0px !important;
+  }
+}

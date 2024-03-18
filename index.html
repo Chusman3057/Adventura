@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css"
+    />
+
+    <!-- bootstrap icon cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css"
+    />
+
+    <!-- iconscout/unicon cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- jquary cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- slick slider css files -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+
+    <!-- my stylesheet file -->
+    <link rel="stylesheet" href="styles/landingStyle.css" />
+
+    <!-- footer stylesheet css file -->
+    <link rel="stylesheet" href="styles/footerStyle.css" />
+
+    <title>complete app</title>
+  </head>
+  <body>
+    <!-- header start  -->
+    <header>
+      <!-- slider container -->
+      <div class="header-container">
+        <div class="header-slider">
+          <div class="slide">
+            <img
+              src="https://c4.wallpaperflare.com/wallpaper/908/576/938/nature-landscape-mountains-trees-wallpaper-preview.jpg"
+              alt="slide not found"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://c4.wallpaperflare.com/wallpaper/919/575/783/nature-landscape-lake-mountains-wallpaper-preview.jpg"
+              alt="slide not found"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://c4.wallpaperflare.com/wallpaper/908/148/844/nature-landscape-mountains-trees-wallpaper-preview.jpg"
+              alt="slide not found"
+            />
+          </div>
+        </div>
+        <div class="header-content">
+          <nav class="container">
+            <div class="logo">
+              <img src="images/landingPage-image/mainLogo.png" alt="logo" />
+            </div>
+
+            <div class="toggle_menu">
+              <i class="uil uil-bars"></i>
+            </div>
+            <div class="nav-upper nav-links">
+              <ul class="mb-0">
+                <li><a href="about.html">ABOUT</a>/</li>
+                <li><a href="contact.html">CONTACT</a>/</li>
+                <li><a href="help.html">HELP</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="container hr"></div>
+
+          <div class="nav-lower nav-links">
+            <ul class="mb-0">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destination.html">Destination</a></li>
+              <li><a href="tours.html">Tours</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="makeMyOwnTrip.html">Make My Own Trip</a></li>
+              <li style="color: #ffd600; font-size: 22px; cursor: pointer">
+                <i id="search_icon" class="uil-search"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="toggle_nav nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destination.html">Destination</a></li>
+              <li><a href="tours.html">Tours</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="makeMyOwnTrip.html">Make My Own Trip</a></li>
+            </ul>
+            <hr class="mx-3" />
+            <ul class="mb-0 toggle-sec-ul nav-links d-flex">
+              <li class=""><a href="about.html" class="pe-2">About</a>/</li>
+              <li class=""><a href="contact.html" class="px-2">Contact</a>/</li>
+              <li class=""><a href="help.html" class="px-2">Help</a></li>
+            </ul>
+            <input type="search" placeholder="Search here" />
+          </div>
+
+          <div class="content container pt-3">
+            <h1>why <span style="color: #ffd600">compass?</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. <br />
+              Duis aute irure dolor in reprehenderit in voluptate velit essess
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <button><a href="destinationListing.html">Learn more</a></button>
+          </div>
+          <div class="social-links container mb-4">
+            <div class="slider-moving-bars">
+              <span class="pe-3">01/03</span>
+              <button onclick="slideMove(0)" id="button1"></button>
+              <button
+                onclick="slideMove(1)"
+                id="button2"
+                class="btn-2"
+              ></button>
+              <button onclick="slideMove(2)" id="button3"></button>
+            </div>
+            <ul>
+              <li>
+                <a href=""><i class="uil uil-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="uil uil-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="uil uil-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-card-box row p-0 container">
+        <div class="card-content col-6 col-sm-6 col-md-3 col-lg-3">
+          <div class="card-body">
+            <i class="uil uil-location-point clr-y"></i>
+            <p class="fw-bold">Destination</p>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p style="padding-left: 27px; cursor: pointer">Select</p>
+        </div>
+        <div class="card-content col-6 col-sm-6 col-md-3 col-lg-3">
+          <div class="card-body">
+            <i class="uil uil-calendar-alt clr-y"></i>
+            <p class="fw-bold">Month / Season</p>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p style="padding-left: 27px; cursor: pointer">Select</p>
+        </div>
+        <div class="card-content col-6 col-sm-6 col-md-3 col-lg-3">
+          <div class="card-body">
+            <i class="uil uil-calender clr-y"></i>
+            <p class="fw-bold">No of Days</p>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p style="padding-left: 27px; cursor: pointer">Select</p>
+        </div>
+        <div
+          class="card-content last-card col-6 col-sm-6 col-md-3 col-lg-3 border-0"
+        >
+          <div class="card-body d-flex flex-column">
+            <i class="uil uil-calendar-alt clr-y"></i>
+            <p class="fw-bold">
+              <a href="destination.html" style="color: black">Explore Now</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end here -->
+
+    <!-- main start  -->
+    <main class="overflow-hidden">
+      <!-- popular tour container start -->
+      <section class="tour container">
+        <h3 class="text-center">See Our Popular Tours</h3>
+        <p style="font-size: 14px; text-align: center; margin: 10px 0 40px 0">
+          We are here with various types of offers that you can get with your
+          family and friends.
+        </p>
+        <div class="tour-card-container">
+          <div class="tour-card">
+            <div class="card-image">
+              <img src="images/landingPage-image/Altit Fort 1.png" alt="" />
+            </div>
+            <div class="card-content">
+              <h4>Gilgit Balistan</h4>
+              <div style="font-size: 14px; margin: 15px 0; display: flex">
+                <img
+                  src="images/landingPage-image/location-dot-solid 1.png"
+                  alt=""
+                  style="margin-right: 10px; height: 19px"
+                />
+                Pakistan
+                <img
+                  src="images/landingPage-image/person-hiking-solid 1.png"
+                  alt=""
+                  style="margin: 0 10px 0 20px"
+                />
+                Trekking
+              </div>
+              <div style="margin: 10px 0 0px 0; display: flex">
+                <img
+                  src="images/landingPage-image/calendar-days-solid 3.png"
+                  alt=""
+                  style="margin-right: 7px; height: 19px"
+                />
+                <p>15 Days | Next Departure: Apr 1, 2023 - Apr 15, 2023</p>
+              </div>
+              <p>
+                Experience the breathtaking natural beauty and cultural richness
+                of Gilgit, Pakistan.
+              </p>
+              <button>
+                <a href="packageDetailsDescription.html">Learn More</a>
+              </button>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="card-image">
+              <img
+                src="images/landingPage-image/pexels-waqas-ahmad-1590114 1 (1).png"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <h4>Hunza Valley</h4>
+              <div style="font-size: 14px; margin: 15px 0; display: flex">
+                <img
+                  src="images/landingPage-image/location-dot-solid 1.png"
+                  alt=""
+                  style="margin-right: 10px; height: 19px"
+                />
+                Pakistan
+                <img
+                  src="images/landingPage-image/person-hiking-solid 1.png"
+                  alt=""
+                  style="margin: 0 10px 0 20px"
+                />
+                Hiking
+              </div>
+              <div style="margin: 10px 0 0px 0; display: flex">
+                <img
+                  src="images/landingPage-image/calendar-days-solid 3.png"
+                  alt=""
+                  style="margin-right: 7px; height: 19px"
+                />
+                <p>15 Days | Next Departure: Apr 1, 2023 - Apr 15, 2023</p>
+              </div>
+              <p>
+                Experience the breathtaking natural beauty and cultural richness
+                of Hunza, Pakistan.
+              </p>
+              <button>
+                <a href="packageDetailsDescription.html">Learn More</a>
+              </button>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="card-image">
+              <img src="images/landingPage-image/Satpara Lake 1.png" alt="" />
+            </div>
+            <div class="card-content">
+              <h4>Skardu</h4>
+              <div style="font-size: 14px; margin: 15px 0; display: flex">
+                <img
+                  src="images/landingPage-image/location-dot-solid 1.png"
+                  alt=""
+                  style="margin-right: 10px; height: 19px"
+                />
+                Pakistan
+                <img
+                  src="images/landingPage-image/person-hiking-solid 1.png"
+                  alt=""
+                  style="margin: 0 10px 0 20px"
+                />
+                Trekking
+              </div>
+              <div style="margin: 10px 0 0px 0; display: flex">
+                <img
+                  src="images/landingPage-image/calendar-days-solid 3.png"
+                  alt=""
+                  style="margin-right: 7px; height: 19px"
+                />
+                <p>15 Days | Next Departure: Apr 1, 2023 - Apr 15, 2023</p>
+              </div>
+              <p>
+                Experience the breathtaking natural beauty and cultural richness
+                of Skardu, Pakistan.
+              </p>
+              <button>
+                <a href="packageDetailsDescription.html">Learn More</a>
+              </button>
+            </div>
+          </div>
+          <div class="tour-card">
+            <div class="card-image">
+              <img
+                src="images/landingPage-image/pexels-waqas-ahmad-1590114 1 (1).png"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <h4>Hunza Valley</h4>
+              <div style="font-size: 14px; margin: 15px 0; display: flex">
+                <img
+                  src="images/landingPage-image/location-dot-solid 1.png"
+                  alt=""
+                  style="margin-right: 10px; height: 19px"
+                />
+                Pakistan
+                <img
+                  src="images/landingPage-image/person-hiking-solid 1.png"
+                  alt=""
+                  style="margin: 0 10px 0 20px"
+                />
+                Hiking
+              </div>
+              <div style="margin: 10px 0 0px 0; display: flex">
+                <img
+                  src="images/landingPage-image/calendar-days-solid 3.png"
+                  alt=""
+                  style="margin-right: 7px; height: 19px"
+                />
+                <p>15 Days | Next Departure: Apr 1, 2023 - Apr 15, 2023</p>
+              </div>
+              <p>
+                Experience the breathtaking natural beauty and cultural richness
+                of Hunza, Pakistan.
+              </p>
+              <button>
+                <a href="packageDetailsDescription.html">Learn More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- popular tour container end here -->
+
+      <!-- Travel with section start -->
+      <section class="travel-with">
+        <h3 class="text-center">Why Travel With Us?</h3>
+        <p>
+          We understand that every traveler has unique needs and preferences.
+          That's why we offer customized travel <br />
+          experiences that are tailored to your individual requirements.
+        </p>
+        <div class="icon-container">
+          <div class="icon-box">
+            <div style="text-align: center; margin: 0; padding: 0">
+              <div class="icon m-0 p-0">
+                <img src="images/landingPage-image/Vector (4).png" alt="" />
+              </div>
+              <p style="font-size: 14px; font-weight: 700">Diversity</p>
+            </div>
+            <div class="travel-arrow">
+              <img src="images/landingPage-image/Group 65.png" alt="" />
+            </div>
+          </div>
+          <div class="icon-box">
+            <div style="text-align: center">
+              <div class="icon">
+                <img src="images/landingPage-image/Vector (4).png" alt="" />
+              </div>
+              <p style="font-size: 14px; font-weight: 700">Moral Values</p>
+            </div>
+            <div class="travel-arrow">
+              <img src="images/landingPage-image/Group 65.png" alt="" />
+            </div>
+          </div>
+          <div class="icon-box">
+            <div style="text-align: center">
+              <div class="icon">
+                <img src="images/landingPage-image/Vector (4).png" alt="" />
+              </div>
+              <p style="font-size: 14px; font-weight: 700">Fast Booking</p>
+            </div>
+            <div class="travel-arrow">
+              <img src="images/landingPage-image/Group 65.png" alt="" />
+            </div>
+          </div>
+          <div class="icon-box">
+            <div style="text-align: center">
+              <div class="icon">
+                <img src="images/landingPage-image/Vector (4).png" alt="" />
+              </div>
+              <p style="font-size: 14px; font-weight: 700">Support</p>
+            </div>
+            <div class="travel-arrow">
+              <img src="images/landingPage-image/Group 65.png" alt="" />
+            </div>
+          </div>
+          <div class="icon-box">
+            <div style="text-align: center">
+              <div class="icon">
+                <img src="images/landingPage-image/Vector (4).png" alt="" />
+              </div>
+              <p style="font-size: 14px; font-weight: 700">Priorities</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Travel with section end here -->
+
+      <!-- Destinatin section start  -->
+      <section class="destinations">
+        <h3 class="text-center">Popular Destinations To Explore</h3>
+        <p class="text-center">
+          You can now explore the best and amazing and popular destinations in
+          Pakistan.
+        </p>
+        <div class="row destination-cards">
+          <div class="card-box col-sm-12 col-md-6 col-lg-3 pe-0">
+            <img src="images/landingPage-image/K2 2.png" alt="" />
+            <h6>K2</h6>
+          </div>
+          <div class="card-box col-sm-12 col-md-6 col-lg-3 pe-0">
+            <img src="images/landingPage-image/Deosai 1.png" alt="" />
+            <h6>Deosai</h6>
+          </div>
+          <div class="card-box col-sm-12 col-md-6 col-lg-3 pe-0">
+            <img src="images/landingPage-image/Satpara Lake 1 (1).png" alt="" />
+            <h6>Satpara Lake</h6>
+          </div>
+          <div class="card-box col-sm-12 col-md-6 col-lg-3">
+            <img src="images/landingPage-image/Katpana Lake 1.png" alt="" />
+            <h6>Katpana Lake</h6>
+          </div>
+        </div>
+      </section>
+      <!-- Destinatin section end here -->
+
+      <!-- Experiences section start -->
+      <section class="experiences">
+        <h3 class="text-center">Experiences Matter</h3>
+        <p class="text-center">See what our clients have to say</p>
+        <div class="experience-cards row">
+          <div class="card c-1 col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="card-content">
+              <div class="d-flex p-4 bg-white">
+                <div>
+                  <img
+                    src="images/landingPage-image/quote-right-solid 1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="images/landingPage-image/Polygon 1.png"
+                alt="not found"
+                style="cursor: pointer"
+                class="down-angle"
+              />
+            </div>
+            <div class="card-bottom">
+              <div>
+                <img
+                  src="images/landingPage-image/michael-dam-mEZ3PoFGs_k-unsplash.png"
+                  alt=""
+                />
+              </div>
+              <h6>Aiony Haust</h6>
+              <p>Blogger</p>
+            </div>
+          </div>
+          <div class="card c-2 col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="card-content d-flex">
+              <div class="p-4" style="display: flex; background-color: #ffd600">
+                <div>
+                  <img
+                    src="images/landingPage-image/quote-right-solid 1 (1).png"
+                    alt=""
+                  />
+                </div>
+                <div class="px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="images/landingPage-image/Polygon 1 (1).png"
+                alt="not found"
+                style="cursor: pointer"
+                class="down-angle"
+              />
+            </div>
+            <div class="card-bottom">
+              <div>
+                <img
+                  src="images/landingPage-image/aiony-haust-3TLl_97HNJo-unsplash.png"
+                  alt=""
+                />
+              </div>
+              <h6>Aiony Haust</h6>
+              <p>Dentist</p>
+            </div>
+          </div>
+          <div class="card c-3 col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="card-content d-flex">
+              <div class="d-flex bg-white p-4">
+                <div>
+                  <img
+                    src="images/landingPage-image/quote-right-solid 1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="images/landingPage-image/Polygon 1.png"
+                alt="not found"
+                style="cursor: pointer"
+                class="down-angle"
+              />
+            </div>
+            <div class="card-bottom">
+              <div>
+                <img
+                  src="images/landingPage-image/julian-wan-WNoLnJo7tS8-unsplash.png"
+                  alt=""
+                />
+              </div>
+              <h6>Aiony Haust</h6>
+              <p>Content Writer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Experiences section end here -->
+
+      <!-- Our client Section start -->
+      <section class="our-clients">
+        <h3 class="text-center">Our Clients</h3>
+        <p class="text-center mb-5">
+          See who are our trustful clients, They have a complete trust on us
+        </p>
+        <ul>
+          <li>
+            <img src="images/landingPage-image/Group 79.png" alt="not found" />
+          </li>
+          <li>
+            <img src="images/landingPage-image/Group 83.png" alt="not found" />
+          </li>
+          <li>
+            <img src="images/landingPage-image/Group 82.png" alt="not found" />
+          </li>
+          <li>
+            <img src="images/landingPage-image/Group 81.png" alt="not found" />
+          </li>
+          <li>
+            <img src="images/landingPage-image/Group 79.png" alt="not found" />
+          </li>
+          <li>
+            <img src="images/landingPage-image/Group 83.png" alt="not found" />
+          </li>
+          <li>
+            <img src="images/landingPage-image/Group 82.png" alt="not found" />
+          </li>
+        </ul>
+      </section>
+      <!-- Our client Section end here -->
+    </main>
+    <!-- main end here -->
+
+    <!-- footer start -->
+    <footer class="row m-0">
+      <div class="card-1 ms-0 ps-0 col-12 col-sm-12 col-md-5 col-lg-5">
+        <div class="logo">
+          <img src="images/landingPage-image/footer-logo.png" alt="" />
+        </div>
+        <p class="w-75">
+          From the Sea Shores to the Deserts, from the Deserts to the Green
+          Plain, from the Green Plains to Mountains touching the skies, we
+          arrange all kind of facilitations to the tourists. We offer all kind
+          of services related to the tourism and ensure safe and comfortable
+          journey to our customers.
+        </p>
+      </div>
+      <div class="card-2 ms-0 ps-0 col-12 col-sm-12 col-md-2 col-lg-2">
+        <h5 style="padding-left: 5px">Quick Links</h5>
+        <ul class="c-2">
+          <li>
+            <span><i class="uil uil-angle-right"></i></span>
+            <span><a href="blog.html">Blog</a></span>
+          </li>
+          <li>
+            <span><i class="uil uil-angle-right"></i></span>
+            <span><a href="gallery.html">Gallery</a></span>
+          </li>
+          <li>
+            <span><i class="uil uil-angle-right"></i></span>
+            <span><a href="#">About Us</a></span>
+          </li>
+          <li>
+            <span><i class="uil uil-angle-right"></i></span>
+            <span><a href="#">Privacy Policy</a> </span>
+          </li>
+          <li>
+            <span><i class="uil uil-angle-right"></i></span>
+            <span><a href="#">Terms & Conditions</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="card-3 pe-0 col-12 col-sm-12 col-md-5 col-lg-5">
+        <h5>Reach Us</h5>
+        <ul class="c-3">
+          <li>
+            <a href=""><i class="uil uil-envelope"></i></a>
+            <p>info@compasstoursandtreks.com</p>
+          </li>
+          <li>
+            <a href=""><i class="uil uil-phone"></i></a>
+            <p>+92 800 8486978 , +47 966 90 936</p>
+          </li>
+          <li>
+            <a href=""><i class="uil uil-map-marker"></i></a>
+            <p class="p">
+              Address: 21-G, Al Latif Center, Main Boulevard,<br />
+              Gulberg-III, Lahore, Pakistan
+            </p>
+          </li>
+        </ul>
+        <ul class="c-3-scnd-ul">
+          <li>Social Media</li>
+          <li>
+            <a href=""><i class="uil uil-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="uil uil-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="uil uil-linkedin-alt"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="uil uil-youtube"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="uil uil-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- lower footer -->
+      <hr class="" />
+      <p class="p-0 pb-3 m-0">
+        © 2023 Compass Tours and Treks.All right reserved
+      </p>
+    </footer>
+    <!-- footer end here -->
+
+    <!-- my script file -->
+    <script src="js/script.js"></script>
+
+    <!-- slick slider js file -->
+    <script src="js/slick.min.js"></script>
+
+    <!-- bootstrap script file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- header slider -->
+    <!-- <script>
+      $(document).ready(function () {
+        $(".header-slider").slick({
+          infinite: true,
+          speed: 1000,
+          slidesToShow: 1,
+          autoplay: true,
+        });
+      });
+    </script> -->
+
+    <script>
+      $(document).ready(function () {
+        var currentSlide = 0; // Initialize the current slide index
+
+        $(".header-slider").on(
+          "afterChange",
+          function (event, slick, currentSlide) {
+            // Update the span text
+            var totalSlides = slick.slideCount;
+            var currentSlideNumber = currentSlide + 1;
+            $(".pe-3").text(
+              currentSlideNumber.toString().padStart(2, "0") + "/" + totalSlides
+            );
+
+            // Update the button background color
+            $(".slider-moving-bars button").removeClass("active-button");
+            $("#button" + (currentSlide + 1)).addClass("active-button");
+          }
+        );
+
+        $(".header-slider").slick({
+          infinite: true,
+          speed: 1000,
+          slidesToShow: 1,
+          autoplay: true,
+        });
+
+        // Function to manually change the slide
+        function slideMove(index) {
+          $(".header-slider").slick("slickGoTo", index);
+        }
+      });
+    </script>
+
+    <!-- <script>
+      $(document).ready(function () {
+        var currentSlide = 0; // Initialize the current slide index
+
+        $(".header-slider").slick({
+          infinite: true,
+          speed: 1000,
+          slidesToShow: 1,
+          autoplay: true,
+        });
+
+        // Function to change the slide and update the slide number
+        function slideMove(slideIndex) {
+          currentSlide = slideIndex;
+          $(".header-slider").slick("slickGoTo", slideIndex); // Go to the selected slide
+          updateSlideNumber();
+        }
+
+        // Function to update the slide number
+        function updateSlideNumber() {
+          var totalSlides = $(".header-slider .slide").length;
+          var formattedCurrentSlide = currentSlide + 1; // Adjust for 0-based index
+          $("#slide-number").text(
+            formattedCurrentSlide.toString().padStart(2, "0") +
+              "/" +
+              totalSlides.toString().padStart(2, "0")
+          );
+        }
+
+        // Initial update of the slide number
+        updateSlideNumber();
+      });
+    </script> -->
+
+    <!-- Tour Card -->
+    <script>
+      $(document).ready(function () {
+        $(".tour-card-container").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          arrows: true,
+          prevArrow:
+            '<span class="c_d_arow prev_arrow"><i class="uil uil-angle-left"></i></span>',
+          nextArrow:
+            '<span class="c_d_arow next_arrow"><i class="uil uil-angle-right"></i></span>',
+          infinite: true,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 556,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
