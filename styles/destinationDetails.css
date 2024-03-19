@@ -1,0 +1,368 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #313131;
+}
+p {
+  font-size: 13px;
+}
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #313131;
+  margin-bottom: 25px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+h6 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* header start */
+/* ==== All navbar ===== */
+/* nav upper start */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo img {
+  height: 35px;
+  width: 130px;
+}
+header .nav-upper ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  gap: 10px;
+}
+header .nav-upper ul li {
+  color: #eee;
+}
+header .nav-upper a {
+  color: #eee;
+  padding-right: 7px;
+}
+nav .toggle_menu i {
+  font-size: 36px;
+  display: none;
+  cursor: pointer;
+}
+header .toggle_nav {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+}
+header .toggle_nav.open {
+  height: 520px;
+  width: 300px;
+}
+header .toggle_nav .toggle-sec-ul {
+  display: flex;
+  font-size: 10px;
+}
+header .toggle_nav ul li {
+  padding: 12px 0;
+}
+header .toggle_nav a {
+  color: #eee;
+  font-size: 14px;
+}
+header .toggle_nav input {
+  outline: none;
+  border: 1.5px solid #ffd600;
+  background-color: transparent;
+  color: #eee;
+  font-size: 15px;
+  margin: 10px 25px 20px 25px;
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+/* nav upper end */
+
+header .hr {
+  border: 1px solid #eee;
+  margin-top: 13px;
+}
+
+/* nav lower start */
+header .nav-lower ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+header .nav-lower li {
+  margin: 13px 20px 0 20px;
+}
+header .nav-lower a {
+  color: #eee;
+}
+/* nav lower end */
+
+/* add pesodu element in nav */
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a:focus {
+  color: #ffd600;
+}
+.nav-links a:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 1.5px;
+  left: 0;
+  width: 100%;
+  background-color: #ffd600;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-links a:hover:after,
+.nav-links a:active:after,
+.nav-links a:focus:after {
+  transform: scaleX(1);
+}
+/* ===== All navbar ===== */
+
+header {
+  background-image: url(../images/gallery-image/destination-listing-banner.png);
+  /* height: 100vh; */
+  width: 100%;
+}
+header .bg-color {
+  /* height: 100vh; */
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 70px;
+}
+header .route-path,
+.route-path a {
+  color: #ffffff;
+  opacity: 1;
+  padding: 15px 0;
+}
+header .route-path a:hover {
+  color: #ffd600;
+  opacity: 1;
+}
+
+/* route card start */
+.header-card-box {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+}
+.header-card-box .card-content {
+  padding: 20px 0 10px 0;
+  background-color: transparent;
+  border-right: 1.5px solid rgb(203, 201, 201);
+}
+.header-card-box .card-content:hover {
+  color: black !important;
+  background-color: #ffd600;
+}
+.header-card-box .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-card-box .card-body i {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 3px;
+  color: #ffd600;
+}
+.header-card-box .card-content:hover i {
+  color: #313131;
+}
+.header-card-box .card-body p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* route card end */
+
+header h1 {
+  text-align: center;
+  font-weight: 600;
+  font-style: 36px;
+  opacity: 1;
+  color: #fff;
+}
+
+/* === header-select-bar start */
+.header-select-bar {
+  background: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px 70px;
+}
+.header-select-bar select {
+  border: 0;
+  margin: 0 10px;
+  font-size: 13px;
+  color: #757575;
+  outline: none;
+  cursor: pointer;
+}
+.header-select-bar select:first-child {
+  font-weight: 600;
+  color: #313131;
+}
+/* === header-select-bar end */
+/* header end */
+
+/* ===== Main Start ======= */
+
+/* 
+====================
+== Popular Tours == 
+====================
+*/
+.tour-card-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.tour-card-container .tour-card {
+  margin: 0 10px;
+}
+.tour-card-container .tour-card .card-image img {
+  width: 100%;
+  height: 200px;
+}
+.tour-card-container .card-content {
+  padding: 20px 25px;
+  background-color: #313131;
+  color: #fff;
+}
+.tour-card-container .card-content h4 {
+  color: #ffd600;
+  font-style: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.tour-card-container .card-content button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid #ffd600;
+  color: #ffd600;
+  background-color: transparent;
+  outline: none;
+  padding: 5px 0 8px 0;
+  margin: 10px 0 5px 0;
+}
+.tour-card-container .card-content button a {
+  color: #ffd600;
+}
+.tour-card-container .card-content button:hover a {
+  color: #313131;
+}
+.tour-card-container .card-content button:hover {
+  color: black;
+  background-color: #ffd600;
+  transition: all 0.3s;
+}
+
+.tour-card-container .uil-angle-left {
+  left: -30px;
+}
+.tour-card-container .uil-angle-left,
+.tour-card-container .uil-angle-right {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 800;
+  top: 50%;
+}
+/* ======= Popular Tours Section End ======= */
+
+/* 
+====================
+=== Experiences ===
+====================
+*/
+.experiences {
+  background-color: #eee;
+  padding: 50px 70px 70px 70px;
+}
+.experiences .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+.experience-cards .card-content {
+  position: relative;
+}
+.experiences .c-1 {
+  left: 10px;
+}
+.experiences .c-2 {
+  top: 32px;
+  z-index: 1;
+}
+.experiences .c-3 {
+  right: 10px;
+}
+.experiences .card .down-angle {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.experiences .card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* ======= Experience Section End ======= */
+/* ===== Main End ======= */
+
+/* ====== Footer Start */
+/* ====== Footer End */
+
+/* Responsive */
+@media (max-width: 992px) {
+  header .nav-upper,
+  header .nav-lower {
+    display: none;
+  }
+  nav .toggle_menu i,
+  header .toggle_nav {
+    display: block;
+  }
+}
