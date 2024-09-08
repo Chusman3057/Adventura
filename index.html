@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/fav-icon.png" />
 
     <!-- bootstrap link -->
     <link
@@ -11,6 +12,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css"
@@ -41,7 +43,7 @@
     <!-- footer stylesheet css file -->
     <link rel="stylesheet" href="styles/footerStyle.css" />
 
-    <title>complete app</title>
+    <title>Adventura</title>
   </head>
   <body>
     <!-- header start  -->
@@ -71,7 +73,9 @@
         <div class="header-content">
           <nav class="container">
             <div class="logo">
-              <img src="images/landingPage-image/mainLogo.png" alt="logo" />
+              <a href="index.html">
+                <img src="images/landingPage-image/mainLogo.png" alt="logo" />
+              </a>
             </div>
 
             <div class="toggle_menu">
@@ -123,25 +127,15 @@
             <h1>why <span style="color: #ffd600">compass?</span></h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. <br />
-              Duis aute irure dolor in reprehenderit in voluptate velit essess
-              cillum dolore eu fugiat nulla pariatur.
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit essess cillum dolore eu fugiat
+              nulla pariatur.
             </p>
             <button><a href="destinationListing.html">Learn more</a></button>
           </div>
           <div class="social-links container mb-4">
-            <div class="slider-moving-bars">
-              <span class="pe-3">01/03</span>
-              <button onclick="slideMove(0)" id="button1"></button>
-              <button
-                onclick="slideMove(1)"
-                id="button2"
-                class="btn-2"
-              ></button>
-              <button onclick="slideMove(2)" id="button3"></button>
-            </div>
             <ul>
               <li>
                 <a href=""><i class="uil uil-facebook-f"></i></a>
@@ -163,27 +157,27 @@
             <p class="fw-bold">Destination</p>
             <i class="uil uil-angle-down"></i>
           </div>
-          <p style="padding-left: 27px; cursor: pointer">Select</p>
+          <p>Select</p>
         </div>
         <div class="card-content col-6 col-sm-6 col-md-3 col-lg-3">
           <div class="card-body">
             <i class="uil uil-calendar-alt clr-y"></i>
-            <p class="fw-bold">Month / Season</p>
+            <p class="fw-bold">Month/Season</p>
             <i class="uil uil-angle-down"></i>
           </div>
-          <p style="padding-left: 27px; cursor: pointer">Select</p>
+          <p>Select</p>
         </div>
-        <div class="card-content col-6 col-sm-6 col-md-3 col-lg-3">
+        <div
+          class="card-content col-6 col-sm-6 col-md-3 col-lg-3 border-1 border-sm-0"
+        >
           <div class="card-body">
             <i class="uil uil-calender clr-y"></i>
             <p class="fw-bold">No of Days</p>
             <i class="uil uil-angle-down"></i>
           </div>
-          <p style="padding-left: 27px; cursor: pointer">Select</p>
+          <p>Select</p>
         </div>
-        <div
-          class="card-content last-card col-6 col-sm-6 col-md-3 col-lg-3 border-0"
-        >
+        <div class="card-content col-6 col-sm-6 col-md-3 col-lg-3 border-0">
           <div class="card-body d-flex flex-column">
             <i class="uil uil-calendar-alt clr-y"></i>
             <p class="fw-bold">
@@ -199,8 +193,8 @@
     <main class="overflow-hidden">
       <!-- popular tour container start -->
       <section class="tour container">
-        <h3 class="text-center">See Our Popular Tours</h3>
-        <p style="font-size: 14px; text-align: center; margin: 10px 0 40px 0">
+        <h3 class="text-center pt-4">See Our Popular Tours</h3>
+        <p style="font-size: 14px; text-align: center; margin: 10px 0 40px">
           We are here with various types of offers that you can get with your
           family and friends.
         </p>
@@ -368,8 +362,8 @@
         <h3 class="text-center">Why Travel With Us?</h3>
         <p>
           We understand that every traveler has unique needs and preferences.
-          That's why we offer customized travel <br />
-          experiences that are tailored to your individual requirements.
+          That's why we offer customized travel experiences that are tailored to
+          your individual requirements.
         </p>
         <div class="icon-container">
           <div class="icon-box">
@@ -377,7 +371,9 @@
               <div class="icon m-0 p-0">
                 <img src="images/landingPage-image/Vector (4).png" alt="" />
               </div>
-              <p style="font-size: 14px; font-weight: 700">Diversity</p>
+              <p style="font-size: 14px; font-weight: 700; max-width: 100%">
+                Diversity
+              </p>
             </div>
             <div class="travel-arrow">
               <img src="images/landingPage-image/Group 65.png" alt="" />
@@ -388,7 +384,9 @@
               <div class="icon">
                 <img src="images/landingPage-image/Vector (4).png" alt="" />
               </div>
-              <p style="font-size: 14px; font-weight: 700">Moral Values</p>
+              <p style="font-size: 14px; font-weight: 700; max-width: 100%">
+                Moral Values
+              </p>
             </div>
             <div class="travel-arrow">
               <img src="images/landingPage-image/Group 65.png" alt="" />
@@ -399,7 +397,9 @@
               <div class="icon">
                 <img src="images/landingPage-image/Vector (4).png" alt="" />
               </div>
-              <p style="font-size: 14px; font-weight: 700">Fast Booking</p>
+              <p style="font-size: 14px; font-weight: 700; max-width: 100%">
+                Fast Booking
+              </p>
             </div>
             <div class="travel-arrow">
               <img src="images/landingPage-image/Group 65.png" alt="" />
@@ -410,18 +410,12 @@
               <div class="icon">
                 <img src="images/landingPage-image/Vector (4).png" alt="" />
               </div>
-              <p style="font-size: 14px; font-weight: 700">Support</p>
+              <p style="font-size: 14px; font-weight: 700; max-width: 100%">
+                Support
+              </p>
             </div>
             <div class="travel-arrow">
               <img src="images/landingPage-image/Group 65.png" alt="" />
-            </div>
-          </div>
-          <div class="icon-box">
-            <div style="text-align: center">
-              <div class="icon">
-                <img src="images/landingPage-image/Vector (4).png" alt="" />
-              </div>
-              <p style="font-size: 14px; font-weight: 700">Priorities</p>
             </div>
           </div>
         </div>
@@ -707,84 +701,16 @@
     ></script>
 
     <!-- header slider -->
-    <!-- <script>
-      $(document).ready(function () {
-        $(".header-slider").slick({
-          infinite: true,
-          speed: 1000,
-          slidesToShow: 1,
-          autoplay: true,
-        });
-      });
-    </script> -->
-
     <script>
       $(document).ready(function () {
-        var currentSlide = 0; // Initialize the current slide index
-
-        $(".header-slider").on(
-          "afterChange",
-          function (event, slick, currentSlide) {
-            // Update the span text
-            var totalSlides = slick.slideCount;
-            var currentSlideNumber = currentSlide + 1;
-            $(".pe-3").text(
-              currentSlideNumber.toString().padStart(2, "0") + "/" + totalSlides
-            );
-
-            // Update the button background color
-            $(".slider-moving-bars button").removeClass("active-button");
-            $("#button" + (currentSlide + 1)).addClass("active-button");
-          }
-        );
-
         $(".header-slider").slick({
           infinite: true,
           speed: 1000,
           slidesToShow: 1,
           autoplay: true,
         });
-
-        // Function to manually change the slide
-        function slideMove(index) {
-          $(".header-slider").slick("slickGoTo", index);
-        }
       });
     </script>
-
-    <!-- <script>
-      $(document).ready(function () {
-        var currentSlide = 0; // Initialize the current slide index
-
-        $(".header-slider").slick({
-          infinite: true,
-          speed: 1000,
-          slidesToShow: 1,
-          autoplay: true,
-        });
-
-        // Function to change the slide and update the slide number
-        function slideMove(slideIndex) {
-          currentSlide = slideIndex;
-          $(".header-slider").slick("slickGoTo", slideIndex); // Go to the selected slide
-          updateSlideNumber();
-        }
-
-        // Function to update the slide number
-        function updateSlideNumber() {
-          var totalSlides = $(".header-slider .slide").length;
-          var formattedCurrentSlide = currentSlide + 1; // Adjust for 0-based index
-          $("#slide-number").text(
-            formattedCurrentSlide.toString().padStart(2, "0") +
-              "/" +
-              totalSlides.toString().padStart(2, "0")
-          );
-        }
-
-        // Initial update of the slide number
-        updateSlideNumber();
-      });
-    </script> -->
 
     <!-- Tour Card -->
     <script>
@@ -818,6 +744,38 @@
               breakpoint: 556,
               settings: {
                 arrows: false,
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".icon-container").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 0,
+          infinite: true,
+          speed: 4000,
+          arrows: false,
+          dots: false,
+          pauseOnHover: true,
+          cssEase: "linear",
+
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 550,
+              settings: {
                 slidesToShow: 1,
               },
             },
